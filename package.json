@@ -1,0 +1,28 @@
+{
+  "name": "formtoyml",
+  "version": "1.0.0",
+  "description": "Convert Form Data to a yaml file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sneha8595/formToYml.git"
+  },
+  "keywords": [
+    "form",
+    "to",
+    "yml"
+  ],
+  "author": "Sneha Reddy P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sneha8595/formToYml/issues"
+  },
+  "homepage": "https://github.com/sneha8595/formToYml#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "write-yaml": "^1.0.0"
+  }
+}
