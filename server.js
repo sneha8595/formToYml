@@ -58,17 +58,13 @@ app.route('/login')
   })
   .post((req, res) => {
     if (req.body.userName === userName && req.body.password === password) {
-      res.sendFile(path.join(__dirname, '/public/enterDetails.html'));
+      req.session.user = userName + password;
+      res.redirect('/enterDetails')
     }
     else {
       res.redirect('/');
     }
   });
-
-
-app.get('/login', (req, res) => {
-  res.sendFile(path.join(__dirname, '/public/login.html'))
-})
 app.get('/enterDetails', (req, res) => {
   if (req.session.user && req.cookies.user_sid) {
     res.sendFile(path.join(__dirname, '/public/enterDetails.html'));
