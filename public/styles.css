@@ -1,9 +1,6 @@
 body#LoginForm {
     background-image: url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 10px;
+    padding: 40px 0 0 0;
 }
 
 .form-heading {
@@ -37,7 +34,6 @@ body#LoginForm {
     background: #ffffff none repeat scroll 0 0;
     border-radius: 2px;
     margin: 10px auto 30px;
-    max-width: 38%;
     padding: 50px 70px 70px 71px;
 }
 
@@ -58,4 +54,9 @@ body#LoginForm {
     height: 50px;
     line-height: 50px;
     padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
 }
