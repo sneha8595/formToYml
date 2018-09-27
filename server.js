@@ -75,7 +75,7 @@ app.get('/enterDetails', (req, res) => {
 })
 app.post('/generateYamlFile', function (req, res) {
   var data = { users: [{ user: req.body }] };
-  yaml('formData.yml', data, function (err) {
+  yaml('data/'+req.body['User Name']+'.yml', data, function (err) {
     res.redirect('/');
   });
 });

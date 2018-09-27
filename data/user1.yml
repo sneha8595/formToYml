@@ -1,0 +1,6 @@
+users:
+  - user:
+      User Name: user1
+      Role: role1
+      Key: key1
+      Environment: env1
